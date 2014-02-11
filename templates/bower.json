@@ -1,6 +1,6 @@
 {
-  "name": "{{name}}",
-  "version": "{{version}}",
+  "name": "<%= pkg.name %>",
+  "version": "{{pkg.version}}",
   {{#if authors}}"authors": {{authors}},{{/if}}{{#if author}}"author": "{{author}}",{{/if}}
   "private": true,
   "dependencies": {
