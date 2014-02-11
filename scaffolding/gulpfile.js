@@ -98,8 +98,3 @@ gulp.task('default', ['scripts', 'styles', 'templates', 'assets']);
 gulp.task('watch', ['default'], function() {
 	gulp.watch(config.src + '/**/*', ['default']);
 });
-
-//Run sails and our watch task
-gulp.task('sails', ['watch'], function() {
-	require('sails').lift();
-});
