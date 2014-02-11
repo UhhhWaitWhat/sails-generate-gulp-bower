@@ -1,0 +1,24 @@
+{
+  "name": "sails-generate-gulp-bower",
+  "version": "0.0.1",
+  "description": "Generate a webapp for Sails.",
+  "main": "lib/index.js",
+  "keywords": [
+    "webapp",
+    "generator",
+    "sails",
+    "generate",
+    "plugin"
+  ],
+  "author": "PaulAvery",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": ">=2.4.x",
+    "merge-defaults": "~0.1.0"
+  },
+  "sailsGenerator": {
+    "type": "webapp",
+    "behavior": "overrides `sails generate webapp`",
+    "sailsVersion": "~0.10.0"
+  }
+}
