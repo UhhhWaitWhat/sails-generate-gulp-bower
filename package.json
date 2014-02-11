@@ -15,7 +15,8 @@
   "license": "MIT",
   "dependencies": {
     "lodash": ">=2.4.x",
-    "merge-defaults": "~0.1.0"
+    "merge-defaults": "~0.1.0",
+    "fs-extra": "~0.8.1"
   },
   "sailsGenerator": {
     "type": "gulp-bower",
