@@ -2,10 +2,10 @@ var sailsgen = require('sails-generate')
 	, path = require('path');
 
 var scope = {
-	generatorType: 'webapp',
+	generatorType: 'gulp-bower',
 	rootPath: process.cwd(),
 	modules: {
-		'webapp': path.resolve(__dirname, '../lib')
+		'gulp-bower': path.resolve(__dirname, '../lib')
 	},
 
 	//generatorName: process.argv[2],

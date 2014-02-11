@@ -1,10 +1,11 @@
 {
   "name": "sails-generate-gulp-bower",
   "version": "0.0.1",
-  "description": "Generate a webapp for Sails.",
+  "description": "Generate gulp and bower config for Sails.",
   "main": "lib/index.js",
   "keywords": [
-    "webapp",
+    "gulp",
+    "bower",
     "generator",
     "sails",
     "generate",
@@ -17,8 +18,8 @@
     "merge-defaults": "~0.1.0"
   },
   "sailsGenerator": {
-    "type": "webapp",
-    "behavior": "overrides `sails generate webapp`",
+    "type": "gulp-bower",
+    "behavior": "overrides `sails generate gulp-bower`",
     "sailsVersion": "~0.10.0"
   }
 }
