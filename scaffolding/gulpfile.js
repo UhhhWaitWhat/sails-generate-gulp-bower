@@ -7,6 +7,7 @@ var gulp		= require('gulp'),
 	minify		= require('gulp-minify-css'),
 	filter		= require('gulp-filter'),
 	handlebars	= require('gulp-handlebars'),
+	ehandlebars = require('gulp-ember-handlebars'),
 	clean		= require('gulp-clean');
 
 var config = require('./gulpconf');
@@ -65,6 +66,18 @@ gulp.task('styles', ['clean'], function() {
 gulp.task('templates', ['clean'], function() {
 	gulp.src(config.templates, {base: config.src})
 		.pipe(handlebars({wrapped: true}))
+		.pipe(concat('bundles/templates.js'))
+		.pipe(uglify({outSourceMap: true}))
+		.pipe(gulp.dest(config.destination));
+});
+
+//Combiles handlebars templates in a way ember can use them
+gulp.task('templates-ember', ['clean'], function() {
+	gulp.src(config.templates, {base: config.src})
+		.pipe(ehandlebars({
+			outputType: 'browser',
+			templateRoot: ''
+		}))
 		.pipe(concat('bundles/templates.js'))
 		.pipe(uglify({outSourceMap: true}))
 		.pipe(gulp.dest(config.destination));

@@ -8,6 +8,7 @@
     "gulp-clean": "~0.2.4",
     "gulp-bower-files": "~0.1.5",
     "gulp-browserify": "~0.4.0",
+    "gulp-ember-handlebars": "~0.5.1",
     "bower": "~1.2.8",
     "gulp": "~3.5.0"
   }
