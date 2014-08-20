@@ -1,8 +1,13 @@
 {
   "name": "sails-generate-gulp-bower",
-  "version": "0.0.1",
-  "description": "Generate gulp and bower config for Sails.",
+  "version": "1.0.0",
+  "description": "Generate Gulp and Bower configs and scaffolding for a sailsjs project",
   "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulAvery/sails-generate-gulp-bower.git"
+  },
+  "homepage": "https://github.com/PaulAvery/sails-generate-gulp-bower.git",
   "keywords": [
     "gulp",
     "bower",
@@ -11,16 +16,15 @@
     "generate",
     "plugin"
   ],
-  "author": "PaulAvery",
+  "author": "Florian Albertz",
   "license": "MIT",
   "dependencies": {
-    "lodash": ">=2.4.x",
-    "merge-defaults": "~0.1.0",
-    "fs-extra": "~0.8.1"
+    "lodash": "~2.4.1",
+    "merge-defaults": "~0.1.0"
   },
   "sailsGenerator": {
     "type": "gulp-bower",
-    "behavior": "overrides `sails generate gulp-bower`",
+    "behavior": "default implementation of `sails generate gulp-bower`",
     "sailsVersion": "~0.10.0"
   }
 }

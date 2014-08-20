@@ -1,5 +1,5 @@
 {
-	hooks: {
-		grunt: false
+	"hooks": {
+		"grunt": false
 	}
 }

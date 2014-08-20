@@ -1,15 +1,8 @@
 {
-  "dependencies": {
-    "gulp-filter": "~0.2.1",
-    "gulp-concat": "~2.1.7",
-    "gulp-handlebars": "~1.0.1",
-    "gulp-minify-css": "~0.2.0",
-    "gulp-uglify": "~0.2.0",
-    "gulp-clean": "~0.2.4",
-    "gulp-bower-files": "~0.1.5",
-    "gulp-browserify": "~0.4.0",
-    "gulp-ember-handlebars": "~0.5.1",
-    "bower": "~1.2.8",
-    "gulp": "~3.5.0"
-  }
+	"dependencies": {
+		"gulp": "^3.8.7",
+		"gulper": "^0.0.1",
+		"gulper-static": "^0.0.1",
+		"gulper-bower": "^0.0.1"
+	}
 }
